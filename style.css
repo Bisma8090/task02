@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    height: 45vh;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added for visibility */
+}
+
+.img {
+    background-color: red;
+    width: 40%;
+    height: 100%; /* Ensure it takes the full height of the container */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+    background-image: url('https://images.unsplash.com/photo-1591843336309-cbf414ad7978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80g');
+}
+
+.textcontainer {
+    width: 60%;
+    background-color: #fff;
+}
+
+.text {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.text h3 {
+    text-align: start;
+    font-size: 25px;
+}
+
+.text p {
+    font-size: 15px;
+}
+
+.text1 {
+    display: flex;
+}
+
+.text1 a i {
+    color: black;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 100px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.innertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.namee {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 90%; /* Adjusted width for smaller screens */
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .img, .textcontainer {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
